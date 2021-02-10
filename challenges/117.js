@@ -16,9 +16,12 @@
 // To get it working, don't worry about efficiency. Later we'll learn about specialized data structures that make this simpler/efficient.
 
 function intersection(a, b){
-  return(
-    // replace this line with your code
-  );
-}
-
+    let inter = [];
+    a.forEach(function(item,index){
+        if (b.indexOf(item)!==-1){
+            inter.push(item);
+        }
+    });  
+   return inter;
+ }
 module.exports = intersection;
